@@ -1,0 +1,27 @@
+{
+  "Version": "2012-10-17",  
+  "Statement":[{
+    "Effect": "Allow",
+    "Action": [
+      "dynamodb:BatchGetItem",
+      "dynamodb:GetItem",
+      "dynamodb:Query",
+      "dynamodb:Scan",
+      "dynamodb:BatchWriteItem",
+      "dynamodb:PutItem",
+      "dynamodb:UpdateItem"
+    ],
+    "Resource": "arn:aws:dynamodb:us-east-2:883355877230:table/dynamodb_hexagon"
+  },
+  {
+    "Sid": "VisualEditor0",
+    "Effect": "Allow",
+    "Action": [
+      "s3:*",
+      "logs:*",
+      "dynamodb:*",
+      "s3-object-lambda:*"
+    ],
+    "Resource": "*"
+  }]
+}
